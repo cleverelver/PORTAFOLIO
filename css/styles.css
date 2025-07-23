@@ -1,0 +1,328 @@
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background: #161527;
+    color: white;
+    padding: 10px;
+}
+
+.hero {
+    background-size: cover;
+    background: url('https://static.vecteezy.com/system/resources/previews/014/897/226/non_2x/light-green-gradient-blur-drawing-vector.jpg');
+    align-items: center;
+    text-align: center;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+    gap: 15px;
+    border-radius: 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-links a:hover {
+    color: #161527;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.search-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.search-container input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+
+.search-container input[type="submit"] {
+    padding: 5px 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    width: 60px;
+}
+
+.search-container input[type="submit"]:hover {
+    background-color: #777;
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.hero-image {
+    border-radius: 20%;
+    height: 150px;
+    margin-right: 20px;
+}
+button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background: #4e7fe9;
+    transition: background 0.3s, color 0.3s;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #333;
+}
+
+section {
+    padding: 50px;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: left;
+}
+
+h3 {
+    margin-top: 0;
+    text-align: left;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(30) infinite alternate-reverse;
+}
+@keyframes typing {
+    form{
+        width: 0ch;
+    }
+}
+.about-container p {
+    text-align: justify;
+    line-height: 1.6;
+    padding: 10px;
+}
+.project {
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+input, textarea, button {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* Modo oscuro */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode header {
+    background: #111;
+}
+
+.dark-mode .project {
+    background: #333;
+    color: white;
+}
+
+.dark-mode input, 
+.dark-mode textarea, 
+.dark-mode button {
+    background: #444;
+    color: white;
+    border: none;
+}
+
+#skills {
+    position: relative;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.carrusel {
+    display: flex;
+    align-items: center;
+}
+
+.carrusel-items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carrusel button {
+    color: #3ACBFC;
+}
+
+.carrusel button:hover {
+    background-color: transparent;
+    color:#48C9AA;
+}
+.icono {
+    min-width: 120px;
+    text-align: center;
+    margin: 10px;
+}
+
+.icono img {
+    width: 50px;
+    height: auto;
+}
+.prev{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    position: absolute;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #34a4d8;
+}
+
+.next {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #34a4d8;
+}
+/* contacto */
+.contact {
+    background-color: #091523;
+}
+.contact-form {
+    flex-direction: column;
+    height: 40%;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-form input{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 14px 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+}
+.contact-form textarea{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 14px 20px; 
+    margin: 0 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+}
+
+.contact-form input textarea:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.contact-form label {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #32CDD5;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+a .btn{
+    margin: 5px;
+}
+.btn:hover{
+    color: #32CDD5;
+    background-color: #777;
+}
+.codetheworld-io {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    margin-top: 20px;
+}
+.codetheworld-io a {
+    margin: 0 15px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0);
+    color: var(--color);
+    font-size: 1.5em;
+    transition: 0.3s ease-in-out;
+}
+.codetheworld-io a:hover {
+    background: var(--color);
+    color: #050801;
+    box-shadow: 0 0 5px var(--color), 0 0 25px var(--color), 0 0 50px var(--color), 0 0 200px var(--color);
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+}

@@ -1,0 +1,111 @@
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+/* Login */
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('https://media.istockphoto.com/id/1460853312/es/foto/puntos-y-l%C3%ADneas-conectados-abstractos-concepto-de-tecnolog%C3%ADa-de-ia-movimiento-del-flujo-de.jpg?s=612x612&w=0&k=20&c=IA_d2iqqxoxc8KrV4U0uAfjusAFP-DwWBd25AIZ5Vik=');
+    width: 100%;
+    background-position: center;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.1);
+    width: 300px; 
+    padding: 24px;
+    border-radius: 16px;
+    border: solid 5px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-title {
+    margin-bottom: 16px;
+}
+
+.input-box {
+    margin-bottom: 15px;
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 16px 10px 38px;
+    border-radius: 99px;
+    border: solid 3px transparent;
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+    caret-color: white;
+    color: white;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+.input-box input:focus {
+    border: solid 3px rgba(255, 255, 255, 0.25);
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.input-box input::-ms-reveal {
+    filter: invert(100%);
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    transition: 0.25s;
+}
+.login-botton {
+    width: 150px;
+    margin-top: 24px;
+    padding: 10px 0;
+    background: #32CDD5;
+    border: none;
+    border-radius: 90px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    outline: transparent 3px solid;
+    transition: 0.1s;
+}
+
+.login-botton:focus {
+    outline: #32CDD58A 3px solid;
+}
+.dont-have-an-account {
+    font-weight: normal;
+    margin-top: 12px;
+}
+
+.dont-have-an-account a {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elver Contreras 🧑‍💻</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body class="login-page">
+    <div class="hero">
+        <form id="loginForm" class="container">
+            <h1 class="login-title">Login</h1>
+            <section class="input-box">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <i class="bx bxs-user"></i>
+            </section>
+            <section class="input-box">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <i class="bx bxs-lock-alt"></i>
+                <i class="bx bx-show" id="togglePassword" style="cursor: pointer;"></i>
+            </section>
+            <section class="remember-forgot-box">
+                <div class="remember-me">
+                    <input type="checkbox" name="remember-me" id="remember-me">
+                    <label for="remember-me">
+                        <h5>Recordar contraseña</h5>
+                    </label>
+                </div>
+                <a class="forgot-password" href="#">
+                    <h5>Te olvidaste la contraseña?</h5>
+                </a>
+            </section>
+            <button class="login-botton" type="submit">Login</button>
+            <h5 class="dont-have-an-account">
+                ¿No tienes una cuenta?
+                <a href="register.html"><b>Regístrate</b></a>
+            </h5>
+        </form>
+        <script src="assets/js/login.js" defer></script>
+        <script src="assets/js/restablecer.js" defer></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elver Contreras 🧑‍💻</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap">
+</head>
+<body>
+    <header>
+        <button id="dark-mode-toggle">🌙</button>
+        <nav class="navbar">
+            <ul id="list" class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#redes">Redes</a></li>
+            </ul>
+            <div class="search-container">
+                <form action="/buscar">
+                    <input type="text" placeholder="Buscar..." name="q" required>
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+            <p id="no-results" style="display: none; color: red;">No se encontraron resultados.</p>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h2>Bienvenido</h2>
+        <div class="about-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfjZomiorI02ixjd5l2nZDR4YT9ki9rOzFww&s" alt="Portafolio de Elver Contreras" class="hero-image">
+            <div class="about-text">
+                <h3>👨‍💻 Elver Contreras | Ingeniero de Software</h3>
+            <p>Estudiante de <strong>Ingeniería de Software</strong> en la <strong>Universidad Tecnológica del Perú</strong>, apasionado por la <strong>inteligencia artificial, desarrollo web y sistemas empresariales</strong>. Mi enfoque está en construir soluciones innovadoras utilizando tecnologías como <strong>Python, JavaScript y Odoo</strong>.</p>
+            <p>Mi objetivo es combinar creatividad y lógica para desarrollar software eficiente, escalable y centrado en el usuario.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Mí</h2>
+        <p>Soy un estudiante de Ingeniería de Software con una gran pasión por la programación y el desarrollo web. Desde que comencé en este mundo, me he dedicado a aprender nuevas tecnologías, mejorar mis habilidades y trabajar en proyectos que desafían mis conocimientos.<br/>
+            🔹 Habilidades principales:<br/>
+                ✔️ Desarrollo Frontend y Backend<br/>
+                ✔️ Lenguajes como HTML, CSS, JavaScript, Python y más<br/>
+                ✔️ Frameworks y librerías como React, Vue.js y Django<br/>
+                ✔️ Bases de datos SQL y NoSQL<br/>
+                ✔️ Control de versiones con Git y GitHub<br/>
+            
+            Me encanta enfrentarme a nuevos retos, colaborar en equipos de desarrollo y crear soluciones innovadoras. Si estás interesado en trabajar conmigo o simplemente quieres conocer más sobre mi trabajo, no dudes en explorar mis proyectos y ponerte en contacto conmigo. 🚀</p>
+    </section>
+
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="project">
+            <p>Una aplicación web interactiva para gestionar tareas de manera eficiente. Con esta herramienta, los usuarios pueden agregar, editar, marcar como completadas o eliminar tareas de su lista de pendientes.<br/>
+                🛠 Tecnologías utilizadas:<br/>
+                ✔️ HTML, CSS y JavaScript para la estructura, estilos y funcionalidad.<br/>
+                ✔️ LocalStorage para guardar las tareas en el navegador y mantenerlas incluso después de recargar la página.<br/>
+                ✔️ Diseño responsive para que se adapte a diferentes dispositivos.</p><br/>
+            <a href="https://github.com/tuusuario/proyecto1" target="_blank">Ver en GitHub</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="carrusel">
+            <div class="carrusel-items">
+                <div class="icono">
+                    <img src="assets/img/html.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="icono">
+                    <img src="assets/img/css.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="icono">
+                    <img src="assets/img/js.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="icono">
+                    <img src="assets/img/react.png" alt="React">
+                    <p>React</p>
+                </div>
+                <div class="icono">
+                    <img src="assets/img/python.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="icono">
+                    <img src="assets/img/c++.png" alt="C++">
+                    <p>C++</p>
+                </div>
+                <div class="icono">
+                    <img src="assets/img/java.png" alt="Java">
+                    <p>Java</p>
+                </div>
+            </div>
+            <button class="prev" onclick="moverCarrusel(-1)">&#10094;</button>
+            <button class="next" onclick="moverCarrusel(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <form class="contact-form" id="contact-form">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+        
+        <!-- Mensaje de respuesta -->
+        <div id="form-message"></div>
+        
+        <div class="codetheworld-io" href="#redes">
+            <a href="https://www.linkedin.com/in/elver-contreras-aa56a318a/" style="--color: #0072b1">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/elver_pc/" style="--color: #E1306C">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/elver.contreras.161?locale=es_LA" style="--color: #4267B2">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.tiktok.com/@elvercontreras10" style="--color: #FF0050">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://www.youtube.com/" style="--color: #FF0000">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <>Hecho con ❤️ por Elver Contreras</>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/busqueda.js"></script>
+    <script src="assets/js/lenguajes.js"></script>
+</body>
+</html>
